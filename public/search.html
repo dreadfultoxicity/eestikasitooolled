@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/search.css">
+    <script src="app/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+    <title>Eesti käsitööõlled</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">
+                <i class="fas fa-home"></i>
+            <li><a href="search.html" id="active">
+                <i class="fas fa-search"></i></a></li>
+            <li><a href="wishlist.html">
+                <i class="fas fa-heart"></i></a></li>
+            <li><a href="my_beers.html">
+                <i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+
+        <h1> Otsing </h1>
+
+        <div class="search-container">
+            <form id="search-row">
+                <input type="text" id="search_input" name="search" placeholder="Otsi.." onfocus="this.value=''">
+                <button type="submit" id="search" onclick="click_search(); return false;">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <div id="search_is_clicked" style="display: none;">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+
+        <div id="no_answer">
+            Kahjuks ei leitud midagi, proovi uuesti!
+        </div>
+
+        <div id="help_text">
+            Mille järgi on võimalik otsida?
+            <ul>
+                <li> Käsitööõlle nime </li>
+                <a class="example"> nt: Virmalised, Frida, Soojale Maale </a>
+                <li> Käsitööõlle nime fraasi </li>
+                <a class="example"> nt: öö, eesti, maagia </a>
+                <li> Pruulikoja nime  </li>
+                <a class="example"> nt: Põhjala, Tanker, Muddis </a>
+                <li> Käsitööõlle sordi </li>
+                <a class="example"> nt: IPA, pilsner, saison </a>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/beer_view.css">
+    <script src="app/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+    <title>Eesti käsitööõlled</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">
+                <i class="fas fa-home"></i>
+            <li><a href="search.html">
+                <i class="fas fa-search"></i></a></li>
+            <li><a href="wishlist.html">
+                <i class="fas fa-heart"></i></a></li>
+            <li><a href="my_beers.html">
+                <i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+
+    <div id="loader">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+
+    <h1 id="beer_name"></h1>
+
+    <div id="beer_image_detailed">
+        <img id="image">
+    </div>
+
+    <div id="beer_details">
+        <div class="beer_element">
+            <a class="beer_label"> Kokkuvõte: </a><br>
+            <a id="summary"></a>
+        </div>
+
+        <div class="beer_element">
+            <a class="beer_label"> Pruulikoda: </a><br>
+            <a id="brewery"></a>
+        </div>
+
+        <div class="beer_element">
+            <a class="beer_label"> Alkohol: </a><br>
+            <a id="alcohol_percentage"></a>
+        </div>
+
+        <div class="beer_element">
+            <a class="beer_label"> Temperatuur: </a><br>
+            <a id="temperature"></a>
+        </div>
+
+        <div class="beer_element">
+            <a class="beer_label"> Koduleht: </a><br>
+            <a id="homepage"></a>
+        </div>
+
+        <div style="width:100%; display: inline-block;"></div>
+    </div>
+
+    <script src="app/beer_view.js"></script>
+</body>
+</html>

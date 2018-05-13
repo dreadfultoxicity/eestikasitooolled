@@ -1,0 +1,387 @@
+body {
+    background-color: #fcfcfc;
+    margin: 0;
+    color: #0d0d0d;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 100px;
+}
+
+#loader {
+    text-align: center;
+    /*padding-top: 90px;*/
+    font-size: 30px;
+    color: #1cceb6;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    font-weight: 100;
+    /*font-size: 25px;*/
+    text-align: center;
+    padding: 10px 0 25px 0;
+    border-bottom: 1px solid #f7f7f7;
+    margin-bottom: 30px;
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #f5f3f9;
+    z-index: 1;
+}
+
+nav ul {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: table-cell;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #0d0d0d;
+    text-align: center;
+    font-size: 17px;
+    padding: 20px 0;
+}
+
+nav a:hover {
+    background-color: #0d0d0d;
+    color: #1cceb6;
+}
+
+#active {
+    color: #1cceb6;
+}
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    font-weight: 300;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagination a:hover {
+    color: #1cceb6;
+}
+
+#main {
+    padding: 16px;
+    margin-bottom: 30px;
+}
+
+.beers {
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 10px;
+}
+
+.beer_image {
+    height: 200px;
+    width: 30%;
+    display:inline-block;
+    border-radius: 5px 0 0 5px;
+}
+
+.beer_image img {
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+}
+
+@media (min-width : 690px) {
+    .image {
+        height: 90%;
+    }
+}
+
+@media (max-width : 690px) {
+    .image {
+        height: 40%;
+        padding-top: 30%;
+    }
+    .beer_image img {
+        padding-top: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .beer_summary {
+        height: 53px;
+    }
+}
+
+@media (min-width: 600px) {
+    .beer_summary {
+        height: 86px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .beers {
+        height: 150px;
+    }
+}
+
+.image {
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+}
+
+
+.beer_info {
+    height: 100%;
+    width: 70%;
+    display:inline-block;
+    float: right;
+    border-radius: 0 5px 5px 0;
+}
+.beer_name {
+    padding: 5px 5px 5px 15px;
+    font-size: 22px;
+    font-weight: 400;
+    width: 100%;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /*display: inline-table;*/
+}
+
+.beer_name:hover {
+    color: #1cceb6;
+}
+
+.brewery_name {
+    /*display: inline-block;*/
+    font-size: 11px;
+    font-weight: 100;
+    float: right;
+}
+
+@media (max-width: 600px){
+    .brewery_name {
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 600px){
+    .brewery_name {
+        margin-right: 15%;
+    }
+}
+
+.beer_summary{
+    /*height: 86px;*/
+    padding: 0 10% 0 15px;
+    font-weight: 100;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon_row {
+    padding-top: 15px;
+    padding-left: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.wishlist_heart {
+    float: right;
+    font-size: 18px;
+    color: #c2c2c2;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media (min-width: 600px) {
+    .wishlist_heart {
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .wishlist_heart {
+        margin-right: 5%;
+    }
+}
+
+/*.wishlist_heart :hover {*/
+    /*color: #ff3e73;*/
+/*}*/
+
+i.in-wishlist {
+    margin-right: 15%;
+    float: right;
+    font-size: 18px;
+    color: #ff3e73;
+    cursor: pointer;
+}
+
+i.in-wishlist :hover {
+    color: #c2c2c2;
+}
+
+.fa fa-heart {
+    padding-right: 15%;
+    float: right;
+    font-size: 18px;
+    color: #c2c2c2;
+    cursor: pointer;
+}
+
+.beer_rating {
+    color: #d6d6d6;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.fa-star :hover {
+    color: #d340fd;
+    cursor: pointer;
+}
+
+#to_top {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f3f9;
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+#to_top:hover {
+    background-color: #0d0d0d;
+    color: #f5f3f9;
+}
+
+.beer_rating {
+    color: #d6d6d6;
+    font-size: 18px;
+    padding-left: 5px;
+    width: 130px;
+    display: inline-block;
+}
+
+.beer_rating i {
+    padding-left: 5px;
+}
+
+#sort {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    display: none;
+}
+
+#sort_button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #9da2a600;
+    color: #0d0d0d;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    /*margin-left: 70%;*/
+    position: absolute;
+    margin-top: 30px;
+    margin-right: 5%;
+    right: 0;
+}
+
+#sort_button:hover {
+    color: #1cceb6;
+}
+
+#sort_dropdown {
+    /*float: right;*/
+    /*display: inline-grid;*/
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    overflow: auto;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.22);
+    z-index: 1;
+    /*margin-left: 70%;*/
+    margin-top: 53px;
+    margin-right: 5%;
+    padding: 10px;
+    right: 0;
+}
+
+#sort_dropdown a {
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+#sort_dropdown a:hover {
+    color: #1cceb6;
+}
+
+#sort_dropdown a i {
+    color: yellow;
+}
+
+@media (max-width: 600px) {
+    .number_who_voted {
+        font-weight: 400;
+        font-size: 13px;
+        display: inline-block;
+        /* padding: 0 5px; */
+        color: #545454;
+    }
+}
+
+@media (min-width: 600px) {
+    .number_who_voted {
+        font-weight: 400;
+        font-size: 15px;
+        display: inline-block;
+        padding: 0 5px;
+        color: #545454;
+    }
+}
+
+@media (max-width: 348px) {
+    .wishlist_heart {
+        padding-top: 10px;
+        padding-right: 10%;
+    }
+}
+@media (max-width: 348px) {
+    .beers {
+        padding-bottom: 30px;
+    }
+}

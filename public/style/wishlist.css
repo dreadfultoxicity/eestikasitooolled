@@ -1,0 +1,78 @@
+
+.beers {
+    height: 50px;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ededed;
+
+}
+
+.beer_image {
+    height: 100%;
+    background-color: transparent;
+}
+
+.beer_image img {
+    padding: 4px 0;
+    height: 40px;
+}
+
+.beer_info {
+    height: 100%;
+    background-color: transparent;
+}
+
+.beer_name {
+    font-size: 17px;
+    padding: 15px 0 20px 15px;
+    width: 70%;
+    height: 18px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+i.in-wishlist :hover {
+    color: #c2c2c2;
+}
+
+i.in_wishlist {
+    color: #ff3e73;
+    padding-top: 15px;
+    padding-right: 5%;
+    float: right;
+    cursor: pointer;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .image {
+        height: 80%;
+        padding-top: 5px;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .image {
+        height: 100%;
+        padding-top: 0;
+    }
+}
+
+#empty_container {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#empty_wishlist {
+    display: none;
+    color: #838383;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

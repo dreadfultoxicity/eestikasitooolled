@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/wishlist.css">
+    <script src="app/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+    <title>Eesti käsitööõlled</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">
+                <i class="fas fa-home"></i>
+            <li><a href="search.html">
+                <i class="fas fa-search"></i></a></li>
+            <li><a href="wishlist.html" id="active">
+                <i class="fas fa-heart"></i></a></li>
+            <li><a href="my_beers.html">
+                <i class="fas fa-user"></i>
+                <div id="user_name" style="font-size: 10px;">  </div>
+            </a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+
+        <h1> Soovide nimekiri</h1>
+
+
+        <div id="loader">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+
+        <div id="empty_container">
+            <div id="empty_wishlist">
+                Sa pole veel midagi oma soovinimekirja lisanud
+            </div>
+        </div>
+
+    </div>
+    <script src="app/wishlist.js"></script>
+</body>
+</html>

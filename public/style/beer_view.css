@@ -1,0 +1,143 @@
+#loader {
+    text-align: center;
+    padding-top: 50%;
+    font-size: 30px;
+    color: #1cceb6;
+}
+h1 {
+    border-bottom: none;
+    padding-top: 25px;
+    margin-bottom: 16px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+}
+
+.beer_element {
+    padding-bottom: 10px;
+}
+
+.beer_label {
+    font-weight: 400;
+}
+
+#beer_image_detailed img {
+    margin-right: 20px;
+    margin-top: 15px;
+    width: 30%;
+    float: right;
+    max-width: 250px;
+    padding-left: 10px;
+}
+
+@media (min-width : 600px) {
+    #beer_image_detailed img {
+        height: 350px;
+        width: auto;
+    }
+}
+
+#beer_details {
+    margin: 30px 20px 50px 20px;
+    font-weight: 200;
+    display: none;
+}
+
+.beer_summary {
+    height: 100%;
+    padding: 0;
+    font-size: 18px;
+}
+
+body {
+    padding-bottom: 70px;
+}
+
+.beer_rating {
+    padding-top: 20px;
+    padding-left: 0;
+    width: auto;
+    /*width: 85%;*/
+    /*text-align: center;*/
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.beer_rating i {
+    font-size: 23px;
+}
+
+#back_button_container {
+    /*text-align:center;*/
+    margin-bottom: 60px;
+    bottom: 0;
+    position:fixed;
+    width:100%;
+}
+
+#back_button {
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    /*padding: 10px 20px;*/
+    cursor: pointer;
+    display: none;
+    float: right;
+    padding: 20px 0 0 0;
+    margin: 0 5px 5px 0;
+}
+
+#back_button:hover {
+    color: #1cceb6;
+}
+
+#back_button a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+#number_of_users {
+    /*text-align: center;*/
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 7px;
+}
+
+a#homepage {
+    text-decoration: none;
+    color: #1cceb6;
+    font-weight: 300;
+}
+
+#number_who_voted {
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    padding: 0 5px;
+    color: #545454;
+}
+
+i.rating1 {
+    padding-left: 0;
+}
+
+#wishlist_heart {
+    display: inline-block;
+    float: right;
+    padding-top: 22px;
+    padding-right: 5%;
+    font-size: 20px;
+    color: #c2c2c2;
+    cursor: pointer;
+}
+
+#users_icon {
+    display: inline-block;
+    padding-right: 5px;
+    color: #666666;
+    font-size: 18px;
+}
